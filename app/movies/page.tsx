@@ -1,8 +1,7 @@
 import axios from 'axios'
 import MovieSearch from './MovieSearch'
 
-const API_KEY = '8b9baa72'
-
+const API_KEY = process.env.OMDB_API_KEY || ''
 interface Movie {
   imdbID: string
   Title: string
